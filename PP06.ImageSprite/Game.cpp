@@ -14,8 +14,8 @@ bool Game::init(const char* title, int xpos, int ypos,
 		if (m_pWindow != 0)
 		{
 			m_pRenderer = SDL_CreateRenderer(m_pWindow, -1, 0);
-			SDL_Surface* pTempSurface = IMG_Load("assets/1.png");
-
+			SDL_Surface* pTempSurface = IMG_Load("assets/2.bmp");
+			// SDL_Surface* pTempSurface = SDL_LoadBMP("...");
 			m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer,
 				pTempSurface);
 			SDL_FreeSurface(pTempSurface);

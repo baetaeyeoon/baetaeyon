@@ -1,8 +1,6 @@
 #pragma once
-
 #include <SDL.h>
 #include <string>
-#include <map>
 
 class GameObject
 {
@@ -11,7 +9,8 @@ public:
 		std::string textureID);
 	void draw(SDL_Renderer* pRenderer);
 	void update();
-	void clean() {}
+	void clean();
+
 protected:
 	std::string m_textureID;
 	int m_currentFrame;

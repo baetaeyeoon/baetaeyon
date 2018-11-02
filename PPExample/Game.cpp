@@ -1,6 +1,5 @@
 #include "Game.h"
 #include "TextureManager.h"
-#include "Player.h"
 #include <iostream>
 #include <SDL_image.h>
 
@@ -8,8 +7,6 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING) >= 0)
 	{
-		m_go->load(100, 100, 128, 82, "animate");
-		m_player->load(300, 300, 128, 82, "animate");
 		m_pWindow = SDL_CreateWindow(title, xpos, ypos, width, height, SDL_WINDOW_SHOWN);
 
 		if (m_pWindow != 0)
@@ -19,20 +16,15 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
 
 		m_bRunning = true;
 
-		//SDL_Surface* pTempSurface = IMG_Load("assets/animate.png");
-		//SDL_Surface* pTempSurface = IMG_Load("assets/animate-alpha.png");
-		//m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer, pTempSurface);
-
-		TheTextureManager::Instance()->load("assets/animate-alpha.png", "animate", m_pRenderer);
-		if (!TheTextureManager::Instance()->load("assets/animate-alpha.png",
-			"animate", m_pRenderer))
+		if (!TheTextureManager::Instance()->load("assets/animate-alpha.png", "animate", m_pRenderer))
 		{
 			return false;
 		}
-		m_go->load(100, 100, 128, 82, "animate");
-		m_player->load(300, 300, 128, 82, "animate");
 
-		//SDL_FreeSurface(pTempSurface);
+		m_go.load(100, 100, 128, 82, "animate");
+		m_player.load(300, 300, 128, 82, "animate");
+
+		SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
 
 		m_sourceRectangle.w = 128;
 		m_sourceRectangle.h = 82;
@@ -50,13 +42,11 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
 
 void Game::render()
 {
-	SDL_RenderClear(m_pRenderer);
-	TextureManager::Instance()->draw("animate", 0, 0, 128, 82, m_pRenderer);
-	TheTextureManager::Instance()->draw("animate", 0, 0, 128, 82, m_pRenderer);
+	SDL_RenderClear(m_pRenderer); // draw colour·Î Áö¿ò
+	m_go.draw(m_pRenderer);
+	m_player.draw(m_pRenderer);
+	SDL_RenderPresent(m_pRenderer); // draw to the screen
 
-	TheTextureManager::Instance()->drawFrame("animate", 100, 100, 128, 82, 1, m_currentFrame, m_pRenderer);
-	TextureManager::Instance()->drawFrame("animate", 100, 100, 128, 82, 1, m_currentFrame, m_pRenderer);
-	SDL_RenderPresent(m_pRenderer);
 }
 
 void Game::clean()
@@ -86,7 +76,8 @@ void Game::handleEvents()
 
 void Game::update()
 {
-	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
+	m_go.update();
+	m_player.update();
 }
 
 

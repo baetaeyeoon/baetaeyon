@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{561FB23D-4C3C-4291-8DAD-47CB9DEFC1B1}</ProjectGuid>
     <RootNamespace>PP09Inheritance</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\starr\source\repos\baetaeyeoon\baetaeyon\SDL\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\starr\source\repos\baetaeyeoon\baetaeyon\SDL\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\329\Desktop\SDL2_image-2.0.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\329\Desktop\SDL2_image-2.0.0\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

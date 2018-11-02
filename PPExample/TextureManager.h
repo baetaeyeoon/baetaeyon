@@ -1,5 +1,3 @@
-#pragma once
-
 #include "SDL.h"
 #include <iostream>
 #include <map>
@@ -32,7 +30,7 @@ public:
 	}
 
 	TextureManager() {}
-
+	
 private:
 	static TextureManager* s_pInstance;
 };

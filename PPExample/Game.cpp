@@ -42,7 +42,7 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
 
 void Game::render()
 {
-	SDL_RenderClear(m_pRenderer); // draw colour·Î Áö¿ò
+	SDL_RenderClear(m_pRenderer); // draw colourï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	m_go.draw(m_pRenderer);
 	m_player.draw(m_pRenderer);
 	SDL_RenderPresent(m_pRenderer); // draw to the screen

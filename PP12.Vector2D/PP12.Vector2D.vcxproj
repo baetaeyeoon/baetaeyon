@@ -18,28 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="SDLGameObject.cpp" />
-    <ClCompile Include="TextureManager.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="LoaderParms.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="SDLGameObject.h" />
-    <ClInclude Include="TextureManager.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{B612E709-7B48-4DF0-BB16-4FDC157DBB77}</ProjectGuid>
-    <RootNamespace>PP10Polymorphism</RootNamespace>
+    <ProjectGuid>{C89793F9-B1A7-4399-84D6-1ADFDFEE053A}</ProjectGuid>
+    <RootNamespace>PP12Vector2D</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -88,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\starr\Downloads\SDL2-devel-2.0.8-VC\SDL2-2.0.8\include;C:\Users\starr\Downloads\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\starr\Downloads\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x64;C:\Users\starr\Downloads\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\starr\Downloads\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include;C:\Users\starr\Downloads\SDL2-devel-2.0.8-VC\SDL2-2.0.8\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\starr\Downloads\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\lib\x64;C:\Users\starr\Downloads\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -139,6 +121,24 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SDLGameObject.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="LoaderParms.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="SDLGameObject.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Vector2D.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

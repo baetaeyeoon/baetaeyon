@@ -2,7 +2,8 @@
 #include "Player.h"
 #include "Enemy.h"
 #include <vector>
-#include "LoaderParms.h"
+#include "LoaderParams.h"
+
 
 class Game
 {

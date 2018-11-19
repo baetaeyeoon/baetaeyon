@@ -15,49 +15,52 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Enemy.cpp">
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\Enemy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\Game.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\Player.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\SDLGameObject.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SDLGameObject.cpp">
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\TextureManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\Vector2D.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Enemy.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\Enemy.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\Game.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\GameObject.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="LoaderParms.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\LoaderParams.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\Player.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="TextureManager.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\SDLGameObject.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SDLGameObject.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\TextureManager.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Vector2D.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\Vector2D.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

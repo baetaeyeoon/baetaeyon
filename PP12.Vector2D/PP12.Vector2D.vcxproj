@@ -18,6 +18,25 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\Enemy.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\Game.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\Player.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\SDLGameObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\TextureManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\꼬리치레\Vector2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\Enemy.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\Game.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\GameObject.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\LoaderParams.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\Player.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\SDLGameObject.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\TextureManager.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\꼬리치레\Vector2D.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{C89793F9-B1A7-4399-84D6-1ADFDFEE053A}</ProjectGuid>
@@ -121,24 +140,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="SDLGameObject.cpp" />
-    <ClCompile Include="TextureManager.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="LoaderParms.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="SDLGameObject.h" />
-    <ClInclude Include="TextureManager.h" />
-    <ClInclude Include="Vector2D.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
